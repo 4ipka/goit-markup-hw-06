@@ -588,7 +588,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-button" type="button">
           <svg
@@ -600,6 +600,82 @@
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
+        <form
+          class="register-form"
+          name="register-form"
+          autocomplete="off"
+          novalidate
+        >
+          <strong class="register-form-title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <div class="register-form-group" role="group">
+            <label class="register-form-field">
+              <span class="register-form-label">Ім'я</span>
+              <input class="register-form-input" type="text" name="" required />
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field">
+              <span class="register-form-label">Телефон</span>
+              <input
+                class="register-form-input"
+                type="tel"
+                name=""
+                required
+                minlength="12"
+                maxlength="12"
+              />
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field">
+              <span class="register-form-label">Пошта</span>
+              <input
+                class="register-form-input"
+                type="email"
+                name=""
+                required
+              />
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#modal-envelope"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field">
+              <span class="register-form-heading">Коментар</span>
+              <textarea
+                class="register-form-message"
+                name=""
+                id=""
+                rows="5"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="register-form-agreement" for="">
+            <input
+              class="register-form-checkbox"
+              type="checkbox"
+              name=""
+              id=""
+              required
+            />
+            <span class="register-form-description"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="register-form-link" href="">Умови договору</a></span
+            >
+          </label>
+
+          <button class="register-form-button button" type="submit">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
 
