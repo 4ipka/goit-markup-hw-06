@@ -585,10 +585,31 @@
             </li>
           </ul>
         </div>
+        <div class="footer-modal-form">
+          <h3 class="footer-modal-title">Підпишіться на розсилку</h3>
+
+          <form class="footer-form">
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email-form"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-button">
+              Підписатися
+              <svg class="footer-form-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#paperplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button">
           <svg
@@ -658,14 +679,22 @@
             </label>
           </div>
 
-          <label class="register-form-agreement" for="">
+          <label class="register-form-agreement">
             <input
-              class="register-form-checkbox"
+              class="register-form-checkbox visually-hidden"
               type="checkbox"
-              name=""
+              name="checkbox"
               id=""
               required
             />
+            <svg class="register-form-icons" width="16px" height="15px">
+              <use class="icon-checked" href="./images/icons.svg#checked"></use>
+              <use
+                class="icon-unchecked"
+                href="./images/icons.svg#unchecked"
+              ></use>
+            </svg>
+
             <span class="register-form-description"
               >Погоджуюся з розсилкою та приймаю
               <a class="register-form-link" href="">Умови договору</a></span
